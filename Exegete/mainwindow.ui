@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>833</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Exegete</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Search.ico</normaloff>Search.ico</iconset>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="2">
+     <widget class="QTextEdit" name="textEdit_Additional1">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QTextEdit" name="textEdit_List">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextEditorInteraction</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_Original">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Original text&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_List">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;List of comments&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QTextEdit" name="textEdit_Original">
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_Additional1">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Additional text 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QTextEdit" name="textEdit_Additional2">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QTextEdit" name="textEdit_BaseText">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QTextEdit" name="textEdit_TargetText">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_TargetText">
+      <property name="text">
+       <string>&lt;b&gt;Target text&lt;/b&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_BaseText">
+      <property name="text">
+       <string>&lt;b&gt;Base text&lt;b&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="Line" name="line_6">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QLabel" name="label_Additional2">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Additional text 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="Line" name="line_7">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="Line" name="line_8">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_dir_original">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_dir_target">
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLabel" name="label_dir_list">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_dir_base">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLabel" name="label_dir_add1">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QLabel" name="label_dir_add2">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>833</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>&amp;Open</string>
+     </property>
+     <addaction name="actionOpen_original"/>
+     <addaction name="actionOpen_target_text"/>
+     <addaction name="actionOpen_list"/>
+     <addaction name="actionOpen_base_text"/>
+     <addaction name="actionOpen_additional_text_1"/>
+     <addaction name="actionOpen_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuClose">
+     <property name="title">
+      <string>&amp;Close</string>
+     </property>
+     <addaction name="actionClose_original"/>
+     <addaction name="actionClose_target_text"/>
+     <addaction name="actionClose_list"/>
+     <addaction name="actionClose_base_text"/>
+     <addaction name="actionClose_additional_text_1"/>
+     <addaction name="actionClose_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuPrint">
+     <property name="title">
+      <string>&amp;Print</string>
+     </property>
+     <addaction name="actionPrint_original"/>
+     <addaction name="actionPrint_target_text"/>
+     <addaction name="actionPrint_list"/>
+     <addaction name="actionPrint_base_text"/>
+     <addaction name="actionPrint_additional_text_1"/>
+     <addaction name="actionPrint_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuConvert_to_PDF">
+     <property name="title">
+      <string>Con&amp;vert to PDF</string>
+     </property>
+     <addaction name="actionConvert_original_to_PDF"/>
+     <addaction name="actionConvert_target_text_to_PDF"/>
+     <addaction name="actionConvert_list_to_PDF"/>
+     <addaction name="actionConvert_base_text_to_PDF"/>
+     <addaction name="actionConvert_additional_text_1_to_PDF"/>
+     <addaction name="actionConvert_additional_text_2_to_PDF"/>
+    </widget>
+    <widget class="QMenu" name="menuConvert_to_ODT">
+     <property name="title">
+      <string>Convert to O&amp;DT</string>
+     </property>
+     <addaction name="actionConvert_original_to_ODT"/>
+     <addaction name="actionConvert_target_text_to_ODT"/>
+     <addaction name="actionConvert_list_to_ODT"/>
+     <addaction name="actionConvert_base_text_to_ODT"/>
+     <addaction name="actionConvert_additional_text_1_to_ODT"/>
+     <addaction name="actionConvert_additional_text_2_to_ODT"/>
+    </widget>
+    <widget class="QMenu" name="menuPrint_preview">
+     <property name="title">
+      <string>Pr&amp;int preview</string>
+     </property>
+     <addaction name="actionPrint_preview_original"/>
+     <addaction name="actionPrint_preview_target_text"/>
+     <addaction name="actionPrint_preview_list"/>
+     <addaction name="actionPrint_preview_base_text"/>
+     <addaction name="actionPrint_preview_additional_text_1"/>
+     <addaction name="actionPrint_preview_additional_text_2"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="menuClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionNew_list"/>
+    <addaction name="actionSave_list"/>
+    <addaction name="actionSave_list_as"/>
+    <addaction name="separator"/>
+    <addaction name="menuPrint"/>
+    <addaction name="menuPrint_preview"/>
+    <addaction name="menuConvert_to_PDF"/>
+    <addaction name="menuConvert_to_ODT"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <widget class="QMenu" name="menuC_opy">
+     <property name="title">
+      <string>C&amp;opy</string>
+     </property>
+     <addaction name="actionCopy_from_original"/>
+     <addaction name="actionCopy_from_target_text"/>
+     <addaction name="actionCopy_from_list"/>
+     <addaction name="actionCopy_from_base_text"/>
+     <addaction name="actionCopy_from_additional_text_1"/>
+     <addaction name="actionCopy_from_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuSelect_all">
+     <property name="title">
+      <string>&amp;Select all</string>
+     </property>
+     <addaction name="actionSelect_all_from_original"/>
+     <addaction name="actionSelect_all_from_target_text"/>
+     <addaction name="actionSelect_all_from_list"/>
+     <addaction name="actionSelect_all_from_base_text"/>
+     <addaction name="actionSelect_all_from_additional_text_1"/>
+     <addaction name="actionSelect_all_from_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuCopy_and_paste">
+     <property name="title">
+      <string>Cop&amp;y and paste</string>
+     </property>
+     <addaction name="actionCopy_and_paste_from_original"/>
+     <addaction name="actionCopy_and_paste_from_target_text"/>
+     <addaction name="actionCopy_and_paste_from_list"/>
+     <addaction name="actionCopy_and_paste_from_base_text"/>
+     <addaction name="actionCopy_and_paste_from_additional_text_1"/>
+     <addaction name="actionCopy_and_paste_from_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuFind">
+     <property name="title">
+      <string>&amp;Find</string>
+     </property>
+     <addaction name="actionFind_in_original"/>
+     <addaction name="actionFind_in_target_text"/>
+     <addaction name="actionFind_in_list"/>
+     <addaction name="actionFind_in_base_text"/>
+     <addaction name="actionFind_in_additional_text_1"/>
+     <addaction name="actionFind_in_additional_text_2"/>
+    </widget>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="menuC_opy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="menuCopy_and_paste"/>
+    <addaction name="actionDelete"/>
+    <addaction name="menuSelect_all"/>
+    <addaction name="separator"/>
+    <addaction name="menuFind"/>
+    <addaction name="actionFind_and_replace"/>
+    <addaction name="actionFind_and_replace_all"/>
+   </widget>
+   <widget class="QMenu" name="menuComments">
+    <property name="title">
+     <string>&amp;Textual comments</string>
+    </property>
+    <addaction name="actionWord_is_missing"/>
+    <addaction name="actionWords_are_missing"/>
+    <addaction name="actionWord_should_be_replaced"/>
+    <addaction name="actionWords_should_be_replaced"/>
+    <addaction name="actionTranslation_has_added_word_s"/>
+    <addaction name="actionIn_original"/>
+    <addaction name="actionIt_would_be_more_accurate_to_translate"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuInsert">
+    <property name="title">
+     <string>&amp;Insert</string>
+    </property>
+    <widget class="QMenu" name="menuInsert_number">
+     <property name="title">
+      <string>Insert &amp;number</string>
+     </property>
+     <addaction name="actionInsert_chapter_number"/>
+     <addaction name="actionInsert_chapters_numbers"/>
+     <addaction name="actionInsert_verse_number"/>
+     <addaction name="actionInsert_verses_numbers"/>
+    </widget>
+    <widget class="QMenu" name="menuInsert_time">
+     <property name="title">
+      <string>In&amp;sert time</string>
+     </property>
+     <addaction name="actionInsert_time_of_work_start"/>
+     <addaction name="actionInsert_time_of_work_end"/>
+    </widget>
+    <addaction name="actionInsert_book_title"/>
+    <addaction name="menuInsert_number"/>
+    <addaction name="actionInsert_question_number"/>
+    <addaction name="menuInsert_time"/>
+    <addaction name="actionInsert_list_title"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <widget class="QMenu" name="menuFont">
+     <property name="title">
+      <string>&amp;Font</string>
+     </property>
+     <addaction name="actionFont_of_original"/>
+     <addaction name="actionFont_of_target_text"/>
+     <addaction name="actionFont_of_list"/>
+     <addaction name="actionFont_of_base_text"/>
+     <addaction name="actionFont_of_additional_text_1"/>
+     <addaction name="actionFont_of_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuZoom_in">
+     <property name="title">
+      <string>&amp;Zoom in</string>
+     </property>
+     <addaction name="actionZoom_in_all_windows"/>
+     <addaction name="actionZoom_in_original"/>
+     <addaction name="actionZoom_in_target_text"/>
+     <addaction name="actionZoom_in_list"/>
+     <addaction name="actionZoom_in_base_text"/>
+     <addaction name="actionZoom_in_additional_text_1"/>
+     <addaction name="actionZoom_in_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuZoom_out">
+     <property name="title">
+      <string>Zoo&amp;m out</string>
+     </property>
+     <addaction name="actionZoom_out_all_windows"/>
+     <addaction name="actionZoom_out_original"/>
+     <addaction name="actionZoom_out_target_text"/>
+     <addaction name="actionZoom_out_list"/>
+     <addaction name="actionZoom_out_base_text"/>
+     <addaction name="actionZoom_out_additional_text_1"/>
+     <addaction name="actionZoom_out_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuText_color">
+     <property name="title">
+      <string>&amp;Text color</string>
+     </property>
+     <addaction name="actionText_color_of_original"/>
+     <addaction name="actionText_color_of_target_text"/>
+     <addaction name="actionText_color_of_list"/>
+     <addaction name="actionText_color_of_base_text"/>
+     <addaction name="actionText_color_of_additional_text_1"/>
+     <addaction name="actionText_color_of_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuBackground_color">
+     <property name="title">
+      <string>&amp;Background color</string>
+     </property>
+     <addaction name="actionBackground_color_of_original"/>
+     <addaction name="actionBackground_color_of_target_text"/>
+     <addaction name="actionBackground_color_of_list"/>
+     <addaction name="actionBackground_color_of_base_text"/>
+     <addaction name="actionBackground_color_of_additional_text_1"/>
+     <addaction name="actionBackground_color_of_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuPalette_color">
+     <property name="title">
+      <string>&amp;Palette color</string>
+     </property>
+     <addaction name="actionPalette_color_of_all_windows"/>
+     <addaction name="actionPalette_color_of_original"/>
+     <addaction name="actionPalette_color_of_target_text"/>
+     <addaction name="actionPalette_color_of_list"/>
+     <addaction name="actionPalette_color_of_base_text"/>
+     <addaction name="actionPalette_color_of_additional_text_1"/>
+     <addaction name="actionPalette_color_of_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuTarget_text">
+     <property name="title">
+      <string>Ta&amp;rget text</string>
+     </property>
+     <addaction name="actionFormatted_target_text"/>
+     <addaction name="actionUnformatted_target_text"/>
+    </widget>
+    <widget class="QMenu" name="menuBase_text">
+     <property name="title">
+      <string>Ba&amp;se text</string>
+     </property>
+     <addaction name="actionFormatted_base_text"/>
+     <addaction name="actionUnformatted_base_text"/>
+    </widget>
+    <widget class="QMenu" name="menuOriginal">
+     <property name="title">
+      <string>&amp;Original</string>
+     </property>
+     <addaction name="actionFormatted_Transcelerator"/>
+     <addaction name="actionFormatted_original"/>
+     <addaction name="actionUnformatted_original"/>
+    </widget>
+    <widget class="QMenu" name="menuEncoding">
+     <property name="title">
+      <string>&amp;Encoding</string>
+     </property>
+     <addaction name="actionEncoding_of_original"/>
+     <addaction name="actionEncoding_of_target_text"/>
+     <addaction name="actionEncoding_of_list"/>
+     <addaction name="actionEncoding_of_base_text"/>
+     <addaction name="actionEncoding_of_additional_text_1"/>
+     <addaction name="actionEncoding_of_additional_text_2"/>
+    </widget>
+    <widget class="QMenu" name="menuAdditional_text_1">
+     <property name="title">
+      <string>&amp;Additional text 1</string>
+     </property>
+     <addaction name="actionFormatted_additional_text_1"/>
+     <addaction name="actionUnformatted_additional_text_1"/>
+    </widget>
+    <widget class="QMenu" name="menuAdditional_text_2">
+     <property name="title">
+      <string>Additional text &amp;2</string>
+     </property>
+     <addaction name="actionFormatted_additional_text_2"/>
+     <addaction name="actionUnformatted_additional_text_2"/>
+    </widget>
+    <addaction name="menuZoom_in"/>
+    <addaction name="menuZoom_out"/>
+    <addaction name="separator"/>
+    <addaction name="menuFont"/>
+    <addaction name="menuText_color"/>
+    <addaction name="menuBackground_color"/>
+    <addaction name="menuPalette_color"/>
+    <addaction name="separator"/>
+    <addaction name="menuOriginal"/>
+    <addaction name="menuTarget_text"/>
+    <addaction name="menuBase_text"/>
+    <addaction name="menuAdditional_text_1"/>
+    <addaction name="menuAdditional_text_2"/>
+    <addaction name="separator"/>
+    <addaction name="menuEncoding"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Optio&amp;ns</string>
+    </property>
+    <widget class="QMenu" name="menuInterface_language">
+     <property name="title">
+      <string>&amp;Interface language</string>
+     </property>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionRussian"/>
+    </widget>
+    <widget class="QMenu" name="menuUSFM_HTML">
+     <property name="title">
+      <string>&amp;USFM -&gt; HTML</string>
+     </property>
+     <addaction name="actionOriginalUSFM_HTML"/>
+     <addaction name="actionTarget_textUSFM_HTML"/>
+     <addaction name="actionBase_textUSFM_HTML"/>
+     <addaction name="actionAdditional_text_1_USFM_HTML"/>
+     <addaction name="actionAdditional_text_2_USFM_HTML"/>
+     <addaction name="actionEncoding_for_USFM_HTML"/>
+    </widget>
+    <widget class="QMenu" name="menuParatext_file_editing">
+     <property name="title">
+      <string>Paratext file editing</string>
+     </property>
+     <addaction name="actionOpen_Paratext_file_for_editing"/>
+     <addaction name="actionClose_Paratext_file"/>
+     <addaction name="actionSave_Paratext_file"/>
+     <addaction name="actionSave_Paratext_file_as"/>
+     <addaction name="actionFormatted_Paratext_file"/>
+     <addaction name="actionUnformatted_Paratext_file"/>
+    </widget>
+    <addaction name="menuInterface_language"/>
+    <addaction name="actionInsert_time_automatically"/>
+    <addaction name="actionInsert_title_automatically"/>
+    <addaction name="actionLoad_files_automatically"/>
+    <addaction name="menuUSFM_HTML"/>
+    <addaction name="menuParatext_file_editing"/>
+    <addaction name="actionShow_hide_file_paths_and_names"/>
+   </widget>
+   <widget class="QMenu" name="menuSpecific_comments">
+    <property name="title">
+     <string>Other versions</string>
+    </property>
+    <addaction name="actionIn_Chechen"/>
+    <addaction name="actionIn_Avar"/>
+    <addaction name="actionIn_Adyghe"/>
+    <addaction name="actionIn_Kabardian"/>
+    <addaction name="actionIn_CARS"/>
+    <addaction name="actionIn_CRV"/>
+    <addaction name="actionIn_CASS"/>
+    <addaction name="actionIn_RBT_Kulakov"/>
+    <addaction name="actionIn_NRT_Biblica"/>
+    <addaction name="actionIn_Synodal"/>
+   </widget>
+   <widget class="QMenu" name="menuLanguage_commens">
+    <property name="title">
+     <string>&amp;Language comments</string>
+    </property>
+    <addaction name="actionIs_the_pronoun_reference_clear"/>
+    <addaction name="actionWould_it_be_better_to_turn_it_to_a_pronoun"/>
+    <addaction name="actionIs_this_sentence_too_complicated_or_long"/>
+    <addaction name="actionWould_it_be_better_to_break_up_this_long_complicated_sentence"/>
+    <addaction name="actionWould_it_be_better_to_restructure_the_sentence"/>
+    <addaction name="actionHow_does_this_verse_connect_to_the_preceding_text"/>
+    <addaction name="actionHow_is_this_figurative_expression_understood"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuInsert"/>
+   <addaction name="menuComments"/>
+   <addaction name="menuSpecific_comments"/>
+   <addaction name="menuLanguage_commens"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_list"/>
+   <addaction name="actionOpen_list"/>
+   <addaction name="actionSave_list"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionPaste"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy_and_paste_from_original"/>
+   <addaction name="actionCopy_and_paste_from_target_text"/>
+   <addaction name="actionCopy_and_paste_from_list"/>
+   <addaction name="actionCopy_and_paste_from_base_text"/>
+   <addaction name="actionCopy_and_paste_from_additional_text_1"/>
+   <addaction name="actionCopy_and_paste_from_additional_text_2"/>
+   <addaction name="separator"/>
+   <addaction name="actionFont_of_list"/>
+   <addaction name="actionTextBold"/>
+   <addaction name="actionTextItalic"/>
+   <addaction name="actionTextUnderline"/>
+   <addaction name="separator"/>
+   <addaction name="actionAlignLeft"/>
+   <addaction name="actionAlignCenter"/>
+   <addaction name="actionAlignJustify"/>
+   <addaction name="actionAlignRight"/>
+   <addaction name="separator"/>
+   <addaction name="actionText_color_of_list"/>
+   <addaction name="actionBackground_color_of_list"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_target_text">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>O&amp;pen target text</string>
+   </property>
+  </action>
+  <action name="actionOpen_base_text">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Open &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionOpen_original">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Open original</string>
+   </property>
+  </action>
+  <action name="actionOpen_list">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Open_24x24.png</normaloff>:/img/img/Open_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open &amp;list</string>
+   </property>
+  </action>
+  <action name="actionClose_target_text">
+   <property name="text">
+    <string>Cl&amp;ose target text</string>
+   </property>
+  </action>
+  <action name="actionClose_base_text">
+   <property name="text">
+    <string>Close &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionClose_original">
+   <property name="text">
+    <string>&amp;Close original</string>
+   </property>
+  </action>
+  <action name="actionClose_list">
+   <property name="text">
+    <string>Close &amp;list</string>
+   </property>
+  </action>
+  <action name="actionNew_list">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/New_24x24.png</normaloff>:/img/img/New_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New list</string>
+   </property>
+  </action>
+  <action name="actionSave_list">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Save.png</normaloff>:/img/img/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save list</string>
+   </property>
+  </action>
+  <action name="actionPrint_target_text">
+   <property name="text">
+    <string>&amp;Print target text</string>
+   </property>
+  </action>
+  <action name="actionPrint_base_text">
+   <property name="text">
+    <string>Print &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionPrint_original">
+   <property name="text">
+    <string>Print &amp;original</string>
+   </property>
+  </action>
+  <action name="actionPrint_list">
+   <property name="text">
+    <string>Print &amp;list</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Undo_24x24.png</normaloff>:/img/img/Undo_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Redo_24x24.png</normaloff>:/img/img/Redo_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Cut_24x24.png</normaloff>:/img/img/Cut_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Paste_24x24.png</normaloff>:/img/img/Paste_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+  </action>
+  <action name="actionCopy_from_original">
+   <property name="text">
+    <string>&amp;Copy from original</string>
+   </property>
+  </action>
+  <action name="actionCopy_from_list">
+   <property name="text">
+    <string>Copy &amp;from list</string>
+   </property>
+  </action>
+  <action name="actionCopy_from_target_text">
+   <property name="text">
+    <string>C&amp;opy from target text</string>
+   </property>
+  </action>
+  <action name="actionCopy_from_base_text">
+   <property name="text">
+    <string>Copy from &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionSelect_all_from_original">
+   <property name="text">
+    <string>&amp;Select all from original</string>
+   </property>
+   <property name="toolTip">
+    <string>Select all from original</string>
+   </property>
+  </action>
+  <action name="actionSelect_all_from_list">
+   <property name="text">
+    <string>Select all &amp;from list</string>
+   </property>
+  </action>
+  <action name="actionSelect_all_from_target_text">
+   <property name="text">
+    <string>S&amp;elect all from target text</string>
+   </property>
+  </action>
+  <action name="actionSelect_all_from_base_text">
+   <property name="text">
+    <string>Select all from &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>&amp;Delete</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>&amp;Manual</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionCopy_and_paste_from_original">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/copy-paste.png</normaloff>:/img/img/copy-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy and paste from original</string>
+   </property>
+  </action>
+  <action name="actionCopy_and_paste_from_list">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/copy-paste-1.png</normaloff>:/img/img/copy-paste-1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy and &amp;paste from list</string>
+   </property>
+  </action>
+  <action name="actionCopy_and_paste_from_target_text">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/copy-paste-2.png</normaloff>:/img/img/copy-paste-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy and paste &amp;from target text</string>
+   </property>
+  </action>
+  <action name="actionCopy_and_paste_from_base_text">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/copy-paste-3.png</normaloff>:/img/img/copy-paste-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy and paste from &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionInsert_book_title">
+   <property name="text">
+    <string>&amp;Insert book title</string>
+   </property>
+  </action>
+  <action name="actionInsert_chapter_number">
+   <property name="text">
+    <string>&amp;Insert chapter number</string>
+   </property>
+  </action>
+  <action name="actionInsert_chapters_numbers">
+   <property name="text">
+    <string>Insert &amp;chapters numbers</string>
+   </property>
+  </action>
+  <action name="actionInsert_verse_number">
+   <property name="text">
+    <string>Insert &amp;verse number</string>
+   </property>
+  </action>
+  <action name="actionInsert_verses_numbers">
+   <property name="text">
+    <string>Insert verses &amp;numbers</string>
+   </property>
+  </action>
+  <action name="actionInsert_question_number">
+   <property name="text">
+    <string>Insert &amp;question number</string>
+   </property>
+  </action>
+  <action name="actionInsert_time_of_work_start">
+   <property name="text">
+    <string>&amp;Insert time of work start</string>
+   </property>
+  </action>
+  <action name="actionInsert_time_of_work_end">
+   <property name="text">
+    <string>Insert time &amp;of work end</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_original">
+   <property name="text">
+    <string>Zoom &amp;in original</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom in original</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_list">
+   <property name="text">
+    <string>Zoom in &amp;list</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_target_text">
+   <property name="text">
+    <string>Z&amp;oom in target text</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_base_text">
+   <property name="text">
+    <string>Zoom in &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_all_windows">
+   <property name="text">
+    <string>&amp;Zoom in all windows</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_all_windows">
+   <property name="text">
+    <string>&amp;Zoom out all windows</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_original">
+   <property name="text">
+    <string>Zoom &amp;out original</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_list">
+   <property name="text">
+    <string>Zoom out &amp;list</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_target_text">
+   <property name="text">
+    <string>Zoo&amp;m out target text</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_base_text">
+   <property name="text">
+    <string>Zoom out &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionFont_of_original">
+   <property name="text">
+    <string>&amp;Font of original</string>
+   </property>
+  </action>
+  <action name="actionFont_of_list">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/text-style.png</normaloff>:/img/img/text-style.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font &amp;of list</string>
+   </property>
+  </action>
+  <action name="actionFont_of_target_text">
+   <property name="text">
+    <string>Fo&amp;nt of target text</string>
+   </property>
+  </action>
+  <action name="actionFont_of_base_text">
+   <property name="text">
+    <string>Font of &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionText_color_of_original">
+   <property name="text">
+    <string>&amp;Text color of original</string>
+   </property>
+  </action>
+  <action name="actionText_color_of_list">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/color-palette-1.png</normaloff>:/img/img/color-palette-1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Text &amp;color of list</string>
+   </property>
+  </action>
+  <action name="actionText_color_of_target_text">
+   <property name="text">
+    <string>Text color &amp;of target text</string>
+   </property>
+  </action>
+  <action name="actionText_color_of_base_text">
+   <property name="text">
+    <string>Text color of &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionBackground_color_of_original">
+   <property name="text">
+    <string>&amp;Background color of original</string>
+   </property>
+  </action>
+  <action name="actionBackground_color_of_list">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/color-palette-2.png</normaloff>:/img/img/color-palette-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Background &amp;color of list</string>
+   </property>
+  </action>
+  <action name="actionBackground_color_of_target_text">
+   <property name="text">
+    <string>Background color &amp;of target text</string>
+   </property>
+  </action>
+  <action name="actionBackground_color_of_base_text">
+   <property name="text">
+    <string>Bac&amp;kground color of base text</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_all_windows">
+   <property name="text">
+    <string>&amp;Palette color of all windows</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_original">
+   <property name="text">
+    <string>Palette &amp;color of original</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_list">
+   <property name="text">
+    <string>Palette color &amp;of list</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_target_text">
+   <property name="text">
+    <string>Pa&amp;lette color of target text</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_base_text">
+   <property name="text">
+    <string>Palette color of &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionThere_is_something_unappropriate_for_the_local_culture">
+   <property name="text">
+    <string>There &amp;is something unappropriate for the local culture</string>
+   </property>
+  </action>
+  <action name="actionFormatted_target_text">
+   <property name="text">
+    <string>&amp;Formatted (USFM/Paratext)</string>
+   </property>
+   <property name="toolTip">
+    <string>Formatted target text (USFM/Paratext)</string>
+   </property>
+  </action>
+  <action name="actionUnformatted_target_text">
+   <property name="text">
+    <string>&amp;Unformatted (USFM/Paratext)</string>
+   </property>
+   <property name="toolTip">
+    <string>Unformatted target text (USFM/Paratext)</string>
+   </property>
+  </action>
+  <action name="actionFormatted_base_text">
+   <property name="text">
+    <string>&amp;Formatted (USFM/Paratext)</string>
+   </property>
+   <property name="toolTip">
+    <string>Formatted base text (USFM/Paratext)</string>
+   </property>
+  </action>
+  <action name="actionUnformatted_base_text">
+   <property name="text">
+    <string>&amp;Unformatted (USFM/Paratext)</string>
+   </property>
+   <property name="toolTip">
+    <string>Unformatted base text (USFM/Paratext)</string>
+   </property>
+  </action>
+  <action name="actionFormatted_original">
+   <property name="text">
+    <string>&amp;Formatted (USFM/Paratext)</string>
+   </property>
+   <property name="toolTip">
+    <string>Formatted original (USFM/Paratext)</string>
+   </property>
+  </action>
+  <action name="actionUnformatted_original">
+   <property name="text">
+    <string>&amp;Unformatted (USFM/Paratext)</string>
+   </property>
+   <property name="toolTip">
+    <string>Unformatted original (USFM/Paratext)</string>
+   </property>
+  </action>
+  <action name="actionTextBold">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/text-bold.png</normaloff>:/img/img/text-bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>TextBold</string>
+   </property>
+   <property name="toolTip">
+    <string>Bold text</string>
+   </property>
+  </action>
+  <action name="actionTextItalic">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/text-italic.png</normaloff>:/img/img/text-italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>TextItalic</string>
+   </property>
+   <property name="toolTip">
+    <string>Italic text</string>
+   </property>
+  </action>
+  <action name="actionAlignLeft">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/paragraph-left-align.png</normaloff>:/img/img/paragraph-left-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>AlignLeft</string>
+   </property>
+   <property name="toolTip">
+    <string>Left alignment</string>
+   </property>
+  </action>
+  <action name="actionAlignRight">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/paragraph-right-align.png</normaloff>:/img/img/paragraph-right-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>AlignRight</string>
+   </property>
+   <property name="toolTip">
+    <string>Right alignment</string>
+   </property>
+  </action>
+  <action name="actionAlignCenter">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/paragraph-center-align.png</normaloff>:/img/img/paragraph-center-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>AlignCenter</string>
+   </property>
+   <property name="toolTip">
+    <string>Center alignment</string>
+   </property>
+  </action>
+  <action name="actionAlignJustify">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/paragraph-justified-align.png</normaloff>:/img/img/paragraph-justified-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>AlignJustify</string>
+   </property>
+   <property name="toolTip">
+    <string>Justify alignment</string>
+   </property>
+  </action>
+  <action name="actionTextUnderline">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/text-underline.png</normaloff>:/img/img/text-underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>TextUnderline</string>
+   </property>
+   <property name="toolTip">
+    <string>Underline text</string>
+   </property>
+  </action>
+  <action name="actionSave_list_as">
+   <property name="text">
+    <string>Save &amp;list as</string>
+   </property>
+  </action>
+  <action name="actionConvert_original_to_PDF">
+   <property name="text">
+    <string>&amp;Convert original to PDF</string>
+   </property>
+  </action>
+  <action name="actionConvert_list_to_PDF">
+   <property name="text">
+    <string>Convert &amp;list to PDF</string>
+   </property>
+  </action>
+  <action name="actionConvert_target_text_to_PDF">
+   <property name="text">
+    <string>Convert target text to &amp;PDF</string>
+   </property>
+  </action>
+  <action name="actionConvert_base_text_to_PDF">
+   <property name="text">
+    <string>Convert &amp;base text to PDF</string>
+   </property>
+  </action>
+  <action name="actionConvert_original_to_ODT">
+   <property name="text">
+    <string>&amp;Convert original to ODT</string>
+   </property>
+  </action>
+  <action name="actionConvert_list_to_ODT">
+   <property name="text">
+    <string>Convert &amp;list to ODT</string>
+   </property>
+  </action>
+  <action name="actionConvert_target_text_to_ODT">
+   <property name="text">
+    <string>Convert target text to &amp;ODT</string>
+   </property>
+  </action>
+  <action name="actionConvert_base_text_to_ODT">
+   <property name="text">
+    <string>Convert &amp;base text to ODT</string>
+   </property>
+  </action>
+  <action name="actionPrint_preview_original">
+   <property name="text">
+    <string>&amp;Print preview original</string>
+   </property>
+  </action>
+  <action name="actionPrint_preview_list">
+   <property name="text">
+    <string>Print preview &amp;list</string>
+   </property>
+  </action>
+  <action name="actionPrint_preview_target_text">
+   <property name="text">
+    <string>Pr&amp;int preview target text</string>
+   </property>
+  </action>
+  <action name="actionPrint_preview_base_text">
+   <property name="text">
+    <string>Print preview &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionFind_in_original">
+   <property name="text">
+    <string>&amp;Find in original</string>
+   </property>
+  </action>
+  <action name="actionFind_in_list">
+   <property name="text">
+    <string>Find &amp;in list</string>
+   </property>
+  </action>
+  <action name="actionFind_in_target_text">
+   <property name="text">
+    <string>Fi&amp;nd in target text</string>
+   </property>
+  </action>
+  <action name="actionFind_in_base_text">
+   <property name="text">
+    <string>Find in &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionFind_and_replace">
+   <property name="text">
+    <string>F&amp;ind and replace</string>
+   </property>
+  </action>
+  <action name="actionFind_and_replace_all">
+   <property name="text">
+    <string>Fi&amp;nd and replace all</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>&amp;English</string>
+   </property>
+  </action>
+  <action name="actionRussian">
+   <property name="text">
+    <string>&amp;Russian</string>
+   </property>
+  </action>
+  <action name="actionInsert_time_automatically">
+   <property name="text">
+    <string>I&amp;nsert time automatically</string>
+   </property>
+  </action>
+  <action name="actionInsert_title_automatically">
+   <property name="text">
+    <string>In&amp;sert title automatically</string>
+   </property>
+  </action>
+  <action name="actionLoad_files_automatically">
+   <property name="text">
+    <string>&amp;Load files automatically</string>
+   </property>
+  </action>
+  <action name="actionInsert_list_title">
+   <property name="text">
+    <string>Insert &amp;list title</string>
+   </property>
+  </action>
+  <action name="actionEncoding_of_original">
+   <property name="text">
+    <string>&amp;Encoding of original</string>
+   </property>
+  </action>
+  <action name="actionEncoding_of_list">
+   <property name="text">
+    <string>Encoding &amp;of list</string>
+   </property>
+  </action>
+  <action name="actionEncoding_of_target_text">
+   <property name="text">
+    <string>E&amp;ncoding of target text</string>
+   </property>
+  </action>
+  <action name="actionEncoding_of_base_text">
+   <property name="text">
+    <string>Encoding of &amp;base text</string>
+   </property>
+  </action>
+  <action name="actionOriginalUSFM_HTML">
+   <property name="text">
+    <string>&amp;Original USFM -&gt;HTML</string>
+   </property>
+  </action>
+  <action name="actionTarget_textUSFM_HTML">
+   <property name="text">
+    <string>&amp;Target text USFM-&gt; HTML</string>
+   </property>
+  </action>
+  <action name="actionBase_textUSFM_HTML">
+   <property name="text">
+    <string>&amp;Base text USFM -&gt; HTML</string>
+   </property>
+  </action>
+  <action name="actionEncoding_for_USFM_HTML">
+   <property name="text">
+    <string>&amp;Encoding for USFM -&gt; HTML</string>
+   </property>
+  </action>
+  <action name="actionFormatted_Transcelerator">
+   <property name="text">
+    <string>F&amp;ormatted (Transcelerator)</string>
+   </property>
+  </action>
+  <action name="actionWord_is_missing">
+   <property name="text">
+    <string>&amp;Word is missing:</string>
+   </property>
+  </action>
+  <action name="actionWords_are_missing">
+   <property name="text">
+    <string>Words are &amp;missing:</string>
+   </property>
+  </action>
+  <action name="actionWord_should_be_replaced">
+   <property name="text">
+    <string>Word &amp;should be replaced:</string>
+   </property>
+  </action>
+  <action name="actionWords_should_be_replaced">
+   <property name="text">
+    <string>Words should be &amp;replaced:</string>
+   </property>
+  </action>
+  <action name="actionIn_original">
+   <property name="text">
+    <string>I&amp;n original:</string>
+   </property>
+  </action>
+  <action name="actionIt_would_be_more_accurate_to_translate">
+   <property name="text">
+    <string>It would &amp;be more accurate to translate:</string>
+   </property>
+  </action>
+  <action name="actionIn_Chechen">
+   <property name="text">
+    <string>&amp;In Chechen:</string>
+   </property>
+  </action>
+  <action name="actionIn_Avar">
+   <property name="text">
+    <string>I&amp;n Avar:</string>
+   </property>
+  </action>
+  <action name="actionIn_Adyghe">
+   <property name="text">
+    <string>In A&amp;dyghe:</string>
+   </property>
+  </action>
+  <action name="actionIn_Kabardian">
+   <property name="text">
+    <string>In &amp;Kabardian:</string>
+   </property>
+  </action>
+  <action name="actionIn_CARS">
+   <property name="text">
+    <string>In &amp;CARS:</string>
+   </property>
+  </action>
+  <action name="actionIn_CRV">
+   <property name="text">
+    <string>In CR&amp;V (RBO):</string>
+   </property>
+  </action>
+  <action name="actionIn_CASS">
+   <property name="text">
+    <string>In CA&amp;SS (Kassian):</string>
+   </property>
+  </action>
+  <action name="actionIn_RBT_Kulakov">
+   <property name="text">
+    <string>In &amp;RBT (Kulakov):</string>
+   </property>
+  </action>
+  <action name="actionOpen_additional_text_1">
+   <property name="text">
+    <string>Open additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionOpen_additional_text_2">
+   <property name="text">
+    <string>Open additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionClose_additional_text_1">
+   <property name="text">
+    <string>Close additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionClose_additional_text_2">
+   <property name="text">
+    <string>Close additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionPrint_additional_text_1">
+   <property name="text">
+    <string>Print additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionPrint_additional_text_2">
+   <property name="text">
+    <string>Print additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionPrint_preview_additional_text_1">
+   <property name="text">
+    <string>Print preview additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionPrint_preview_additional_text_2">
+   <property name="text">
+    <string>Print preview additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionConvert_additional_text_1_to_PDF">
+   <property name="text">
+    <string>Convert additional text &amp;1 to PDF</string>
+   </property>
+  </action>
+  <action name="actionConvert_additional_text_2_to_PDF">
+   <property name="text">
+    <string>Convert additional text &amp;2 to PDF</string>
+   </property>
+  </action>
+  <action name="actionConvert_additional_text_1_to_ODT">
+   <property name="text">
+    <string>Convert additional text &amp;1 to ODT</string>
+   </property>
+  </action>
+  <action name="actionConvert_additional_text_2_to_ODT">
+   <property name="text">
+    <string>Convert additional text &amp;2 to ODT</string>
+   </property>
+  </action>
+  <action name="actionCopy_from_additional_text_1">
+   <property name="text">
+    <string>Copy from additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionCopy_from_additional_text_2">
+   <property name="text">
+    <string>Copy from additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionCopy_and_paste_from_additional_text_1">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Copy.png</normaloff>:/img/img/Copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy and paste from additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionCopy_and_paste_from_additional_text_2">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/img/Copy_24x24.png</normaloff>:/img/img/Copy_24x24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy and paste from additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionSelect_all_from_additional_text_1">
+   <property name="text">
+    <string>Select all from additional text &amp;1</string>
+   </property>
+   <property name="toolTip">
+    <string>Select all from additional text 1</string>
+   </property>
+  </action>
+  <action name="actionSelect_all_from_additional_text_2">
+   <property name="text">
+    <string>Select all from additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionFind_in_additional_text_1">
+   <property name="text">
+    <string>Find in additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionFind_in_additional_text_2">
+   <property name="text">
+    <string>Find in additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_additional_text_1">
+   <property name="text">
+    <string>Zoom in additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_additional_text_2">
+   <property name="text">
+    <string>Zoom in additional text &amp;2</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom in additional text 2</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_additional_text_1">
+   <property name="text">
+    <string>Zoom out additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionZoom_out_additional_text_2">
+   <property name="text">
+    <string>Zoom out additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionFont_of_additional_text_1">
+   <property name="text">
+    <string>Font of additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionFont_of_additional_text_2">
+   <property name="text">
+    <string>Font of additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionText_color_of_additional_text_1">
+   <property name="text">
+    <string>Text color of additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionText_color_of_additional_text_2">
+   <property name="text">
+    <string>Text color of additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionBackground_color_of_additional_text_1">
+   <property name="text">
+    <string>Background color of additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionBackground_color_of_additional_text_2">
+   <property name="text">
+    <string>Background color of additional text &amp;2</string>
+   </property>
+   <property name="toolTip">
+    <string>Background color of additional text 2</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_additional_text_1">
+   <property name="text">
+    <string>Palette color of additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionPalette_color_of_additional_text_2">
+   <property name="text">
+    <string>Palette color of additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionFormatted_additional_text_1">
+   <property name="text">
+    <string>&amp;Formatted (USFM/ Paratext)</string>
+   </property>
+  </action>
+  <action name="actionUnformatted_additional_text_1">
+   <property name="text">
+    <string>&amp;Unformatted (USFM / Paratext)</string>
+   </property>
+  </action>
+  <action name="actionFormatted_additional_text_2">
+   <property name="text">
+    <string>&amp;Formatted (USFM / Paratext)</string>
+   </property>
+  </action>
+  <action name="actionUnformatted_additional_text_2">
+   <property name="text">
+    <string>&amp;Unformatted (USFM / Paratext)</string>
+   </property>
+  </action>
+  <action name="actionEncoding_of_additional_text_1">
+   <property name="text">
+    <string>Encoding of additional text &amp;1</string>
+   </property>
+  </action>
+  <action name="actionEncoding_of_additional_text_2">
+   <property name="text">
+    <string>Encoding of additional text &amp;2</string>
+   </property>
+  </action>
+  <action name="actionAdditional_text_1_USFM_HTML">
+   <property name="text">
+    <string>&amp;Additional text 1 USFM -&gt; HTML</string>
+   </property>
+  </action>
+  <action name="actionAdditional_text_2_USFM_HTML">
+   <property name="text">
+    <string>Additional text &amp;2 USFM -&gt; HTML</string>
+   </property>
+  </action>
+  <action name="actionIn_NRT_Biblica">
+   <property name="text">
+    <string>In NRT (&amp;Biblica):</string>
+   </property>
+  </action>
+  <action name="actionIn_Synodal">
+   <property name="text">
+    <string>In S&amp;ynodal:</string>
+   </property>
+  </action>
+  <action name="actionIs_the_pronoun_reference_clear">
+   <property name="text">
+    <string>Is the pronoun reference clear?</string>
+   </property>
+  </action>
+  <action name="actionWould_it_be_better_to_turn_it_to_a_pronoun">
+   <property name="text">
+    <string>Would it be better to turn it to a pronoun?</string>
+   </property>
+  </action>
+  <action name="actionIs_this_sentence_too_complicated_or_long">
+   <property name="text">
+    <string>Is this sentence too complicated or long?</string>
+   </property>
+  </action>
+  <action name="actionWould_it_be_better_to_break_up_this_long_complicated_sentence">
+   <property name="text">
+    <string>Would it be better to break up this long/complicated sentence?</string>
+   </property>
+  </action>
+  <action name="actionWould_it_be_better_to_restructure_the_sentence">
+   <property name="text">
+    <string>Would it be better to restructure the sentence?</string>
+   </property>
+  </action>
+  <action name="actionHow_does_this_verse_connect_to_the_preceding_text">
+   <property name="text">
+    <string>How does this verse connect to the preceding text?</string>
+   </property>
+  </action>
+  <action name="actionTranslation_has_added_word_s">
+   <property name="text">
+    <string>Translation has added word(s):</string>
+   </property>
+  </action>
+  <action name="actionHow_is_this_figurative_expression_understood">
+   <property name="text">
+    <string>How is this figurative expression understood?</string>
+   </property>
+  </action>
+  <action name="actionOpen_Paratext_file_for_editing">
+   <property name="text">
+    <string>Open Paratext file for editing</string>
+   </property>
+  </action>
+  <action name="actionClose_Paratext_file">
+   <property name="text">
+    <string>Close Paratext file</string>
+   </property>
+  </action>
+  <action name="actionSave_Paratext_file">
+   <property name="text">
+    <string>Save Paratext file</string>
+   </property>
+  </action>
+  <action name="actionSave_Paratext_file_as">
+   <property name="text">
+    <string>Save Paratext file as</string>
+   </property>
+  </action>
+  <action name="actionFormatted_Paratext_file">
+   <property name="text">
+    <string>Formatted USFM</string>
+   </property>
+  </action>
+  <action name="actionUnformatted_Paratext_file">
+   <property name="text">
+    <string>Unformatted USFM</string>
+   </property>
+  </action>
+  <action name="actionShow_hide_file_paths_and_names">
+   <property name="text">
+    <string>Show/hide file paths and names</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>textEdit_Original</tabstop>
+  <tabstop>textEdit_List</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
